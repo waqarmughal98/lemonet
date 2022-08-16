@@ -1,13 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.react-player__preview {
+  border-radius: 15px;
+}
+
+/* Progress Bar */
+.progress {
+  background: #fff;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 400px;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, #f2f047, #1ed94f);
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-white px-6 py-2 border-2 border-white border-opacity-30 rounded-full;
+  }
+  .btn-primary-bg {
+    @apply text-white px-6 py-2 bg-white bg-opacity-30 rounded-full;
+  }
+  .btn-secondary {
+    @apply bg-white text-primary py-2 px-6 rounded-full uppercase;
+  }
+  .main-gradient {
+    @apply from-secondary to-primary;
+  }
 }
