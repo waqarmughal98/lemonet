@@ -1,6 +1,4 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
 const Network = () => {
   return (
@@ -69,7 +67,7 @@ const Network = () => {
             </div>
             <img
               src="./images/network-right.png"
-              className="absolute right-0 bottom-0"
+              className="absolute right-0 -bottom-24"
               alt=""
             />
           </div>
