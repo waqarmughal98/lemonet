@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lemonet/static/css/main.0996e015.css",
-    "main.js": "/lemonet/static/js/main.ca9a926d.js",
+    "main.js": "/lemonet/static/js/main.99156261.js",
     "index.html": "/lemonet/index.html",
     "main.0996e015.css.map": "/lemonet/static/css/main.0996e015.css.map",
-    "main.ca9a926d.js.map": "/lemonet/static/js/main.ca9a926d.js.map"
+    "main.99156261.js.map": "/lemonet/static/js/main.99156261.js.map"
   },
   "entrypoints": [
     "static/css/main.0996e015.css",
-    "static/js/main.ca9a926d.js"
+    "static/js/main.99156261.js"
   ]
 }
