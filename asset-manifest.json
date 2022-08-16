@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/lemonet/static/css/main.0996e015.css",
-    "main.js": "/lemonet/static/js/main.99156261.js",
-    "index.html": "/lemonet/index.html",
-    "main.0996e015.css.map": "/lemonet/static/css/main.0996e015.css.map",
-    "main.99156261.js.map": "/lemonet/static/js/main.99156261.js.map"
+    "main.css": "./static/css/main.68a81e27.css",
+    "main.js": "./static/js/main.2c321e93.js",
+    "index.html": "./index.html",
+    "main.68a81e27.css.map": "./static/css/main.68a81e27.css.map",
+    "main.2c321e93.js.map": "./static/js/main.2c321e93.js.map"
   },
   "entrypoints": [
-    "static/css/main.0996e015.css",
-    "static/js/main.99156261.js"
+    "static/css/main.68a81e27.css",
+    "static/js/main.2c321e93.js"
   ]
 }
