@@ -15,7 +15,7 @@ const PresaleWidget = () => {
         <div class="card text-left text-secondary font-bold text-2xl italic space-x-4">
           <Countdown
             className="tracking-widest space-x-4"
-            date={Date.now() + 1000000}
+            date={Date.now() + 100000000}
           />
         </div>
         <div className="space-x-8 flex flex-row text-para">
