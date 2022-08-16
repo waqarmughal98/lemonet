@@ -1,4 +1,6 @@
 import React from "react";
+import Countdown from "react-countdown";
+import "../counter.js";
 
 const PresaleWidget = () => {
   return (
@@ -9,6 +11,19 @@ const PresaleWidget = () => {
         </h1>
 
         <p className="pt-4 text-left">Pre-sale ends in:</p>
+
+        <div class="card text-left text-secondary font-bold text-2xl italic space-x-4">
+          <Countdown
+            className="tracking-widest space-x-4"
+            date={Date.now() + 1000000}
+          />
+        </div>
+        <div className="space-x-8 flex flex-row text-para">
+          <p>D</p>
+          <p>H</p>
+          <p>M</p>
+          <p>S</p>
+        </div>
       </div>
 
       <div className="bg-primary py-8 px-12  rounded-r-xl">
