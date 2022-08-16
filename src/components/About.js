@@ -22,10 +22,10 @@ const About = () => {
           width="100%"
           height="500px"
           className="rounded-2xl"
-          light="/images/video-overlay.png"
+          light="./images/video-overlay.png"
           playIcon={
             <button>
-              <img src="/images/video-play-btn.png" alt="" />
+              <img src="./images/video-play-btn.png" alt="" />
             </button>
           }
         />
