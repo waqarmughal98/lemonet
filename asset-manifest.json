@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lemonet/static/css/main.0996e015.css",
+    "main.js": "/lemonet/static/js/main.e05937fe.js",
+    "index.html": "/lemonet/index.html",
+    "main.0996e015.css.map": "/lemonet/static/css/main.0996e015.css.map",
+    "main.e05937fe.js.map": "/lemonet/static/js/main.e05937fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0996e015.css",
+    "static/js/main.e05937fe.js"
+  ]
+}
