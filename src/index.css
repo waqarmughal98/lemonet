@@ -27,7 +27,7 @@ body {
   padding: 0 5px;
   display: flex;
   height: 40px;
-  width: 400px;
+  width: 100%;
 }
 
 .progress-value {
@@ -47,12 +47,104 @@ body {
   }
 }
 
+/* Mobile Menu */
+
+.mobileMenu {
+  height: 10vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mobileMenu.active {
+  height: 100vh;
+}
+
+.menu {
+  align-items: left;
+  clip-path: polygon(81.05% 9.1%, 92% 9.1%, 92% 10.1%, 81.05% 10.1%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: clip-path 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  z-index: 0;
+}
+.active .menu {
+  background-color: #1ed94f;
+  clip-path: polygon(101% -1%, 101% 101%, -1% 101%, -1% -1%);
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  transform: scale(0.8);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.option {
+  cursor: pointer;
+  margin: 8px 0;
+}
+.active .options {
+  transform: scale(1);
+}
+.x {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+.top-bars {
+  stroke: #f2f047;
+  transition: stroke 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active .top-bars {
+  stroke: #f2f2f2;
+}
+.bar {
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bar1 {
+  transform-origin: 190px 20.5px;
+}
+.bar2 {
+  transform-origin: 190px 28.5px;
+}
+.active .bar1 {
+  transform: translateY(8.6px) rotate(45deg);
+}
+.active .bar2 {
+  transform: rotate(-45deg);
+}
+.active .bar3 {
+  display: none;
+}
+.menu-click-area {
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 24px;
+  width: 40px;
+}
+nav a.active {
+  color: #ffce31;
+  font-weight: 600;
+  background-color: #1849c6;
+}
+
 @layer components {
   .btn-primary {
-    @apply text-white px-6 py-2 border-2 border-white border-opacity-30 rounded-full;
+    @apply transition text-white px-6 py-2 border-2 border-white border-opacity-30 rounded-full hover:bg-white hover:bg-opacity-30;
   }
   .btn-primary-bg {
-    @apply text-white px-6 py-2 bg-white bg-opacity-30 rounded-full;
+    @apply transition text-white px-6 py-2 border-2 border-transparent bg-white hover:bg-transparent hover:border-white hover:border-opacity-30 bg-opacity-30 rounded-full;
   }
   .btn-secondary {
     @apply bg-white text-primary py-2 px-6 rounded-full uppercase;

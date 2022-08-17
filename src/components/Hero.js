@@ -11,8 +11,8 @@ import {
 const Hero = () => {
   return (
     <>
-      <div className="relative">
-        <div className="absolute my-auto top-0 bottom-48 z-20 grid h-fit right-6 text-white bg-white bg-opacity-30 px-4 py-6 rounded-full space-y-6">
+      <div className="relative text-center">
+        <div className="absolute my-auto lg:top-0 bottom-48 lg:bottom-48 z-10 flex items-center lg:grid h-fit right-20 lg:right-6 text-white bg-white bg-opacity-30 px-4 py-6 rounded-full space-x-6 lg:space-x-0 space-y-0 lg:space-y-6">
           <FaFacebookF className="cursor-pointer" />
           <FaTwitter className="cursor-pointer" />
           <FaYoutube className="cursor-pointer" />
@@ -21,7 +21,7 @@ const Hero = () => {
           <FaGoogle className="cursor-pointer" />
         </div>
         <div className="relative w-full h-full bg-gradient-to-br from-secondary to-primary text-center">
-          <div className="relative mx-auto w-2/5 space-y-8 py-40 text-center">
+          <div className="relative mx-auto w-full lg:w-2/5 px-4 lg:px-0 space-y-8 py-52 lg:py-40 text-center">
             <div className="absolute -left-48 top-28">
               <img src="./images/h-left.png" alt="" />
             </div>

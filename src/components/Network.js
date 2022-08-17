@@ -3,7 +3,7 @@ import React from "react";
 const Network = () => {
   return (
     <div>
-      <div className="py-20 px-40 justify-center text-center">
+      <div className="py-20 px-4 lg:px-40 justify-center text-center">
         <div className="relative space-y-4">
           <img
             src="./images/network-left.png"
@@ -14,14 +14,14 @@ const Network = () => {
             Lemon Network
           </h1>
 
-          <p className="text-para text-lg w-3/4 justify-center mx-auto">
+          <p className="text-para text-lg w-full lg:w-3/4 justify-center mx-auto">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blan
             ditiis praes entium volup tatum deleniti.
           </p>
         </div>
 
-        <div className="swipe-div justify-center mx-auto py-32 grid grid-cols-2 gap-6">
-          <div className="relative py-20 pl-12 pr-40 w-[600px] bg-white text-left z-10 drop-shadow-xl">
+        <div className="swipe-div justify-center mx-auto py-16 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="relative py-12 lg:py-20 pl-6 lg:pl-12 pr-6 lg:pr-40 w-full lg:w-[600px] bg-white text-left z-10 drop-shadow-xl">
             <h1 className="uppercase text-para font-bold opacity-40 text-3xl">
               Problem
             </h1>
@@ -44,7 +44,7 @@ const Network = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute -left-12 -top-12 py-20 pl-12 pr-40 w-[600px] bg-primary text-left z-10 drop-shadow-xl">
+            <div className="absolute left-0 lg:-left-12 top-0 lg:-top-12 py-12 lg:py-20 pl-6 lg:pl-12 pr-6 lg:pr-40 w-full lg:w-[600px] bg-primary text-left z-10 drop-shadow-xl">
               <h1 className="uppercase text-white font-bold text-3xl">
                 Solution
               </h1>

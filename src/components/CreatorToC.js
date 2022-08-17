@@ -2,7 +2,7 @@ import React from "react";
 
 const CreatorToC = () => {
   return (
-    <div className="grid grid-cols-2 px-32 py-20 gap-x-20">
+    <div className="grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-32 py-20 gap-y-8 lg:gap-y-0 gap-x-0 lg:gap-x-20">
       <div className="relative space-y-6">
         <img
           src="./images/ctc-left.png"
